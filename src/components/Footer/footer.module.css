@@ -1,0 +1,56 @@
+.footer
+{
+    background-color: #1e2226;
+    line-height: 5vh;
+    color: white;
+    padding: 5vh;
+}
+.footer img{
+    width: 5vh;
+    border-radius: 50%;
+    margin-bottom: 1vh;
+}
+.link a
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: cornsilk;
+}
+.link{
+    text-align: center;
+    padding-top: 6vh;
+}
+.icon h1
+{
+    display: inline;
+    padding: 2vh;
+    cursor: pointer;
+}
+.footer h2{
+    color: rgb(82, 82, 149);
+}
+.footer p{
+    color: rgb(18, 189, 208);
+    font-size: smaller;
+}
+.info
+{
+    padding-top: 6vh;
+}
+.signup
+{
+    padding-top: 6vh;
+}
+.signup input{
+    width: 60%;
+    background-color: #9aa3c0;
+}
+.signup button{
+    margin-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: rgb(191, 191, 240);
+    background-color: rgb(62, 62, 250);
+    border-radius: 10%;
+}
