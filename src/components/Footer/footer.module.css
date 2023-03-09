@@ -25,10 +25,10 @@
   cursor: pointer;
 }
 .footer h2 {
-  color: red;
+  color: rgb(240, 103, 103);
 }
 .footer p {
-  color: rgb(222, 44, 44);
+  color: rgb(224, 204, 204);
   font-size: smaller;
 }
 .info {

@@ -1,6 +1,7 @@
 .section1 img {
-  width: 90%;
+  width: 110%;
   padding-left: 1vh;
+  height: 100%;
 }
 .section1 {
   padding: 5vh;
@@ -19,14 +20,49 @@
   font-weight: 500;
 }
 .section2 img {
-  width: 90%;
+  width: 100%;
+}
+.section2 {
+  padding: 2vh;
 }
 .section2 h1 {
   text-transform: uppercase;
   padding-bottom: 2vh;
   font-weight: bold;
   font-size: 50px;
+  padding-left: 2vh;
 }
 .section2 h1 span {
+  color: red;
+}
+.section2 p {
+  font-size: 2vh;
+  font-weight: 500;
+  padding-left: 2vh;
+}
+.container2
+{
+  background-color: #796b6b79;
+}
+.section3
+{
+  padding: 5vh;
+}
+.section3 img{
+  width: 110%;
+}
+.section3 h1 {
+  text-transform: uppercase;
+  padding-bottom: 2vh;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 2vh;
+}
+.section3 p {
+  font-size: 2vh;
+  font-weight: 500;
+  padding-left: 2vh;
+}
+.section3 h1 span{
   color: red;
 }
