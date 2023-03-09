@@ -2,6 +2,7 @@ import { Container } from "@mui/system";
 import React from "react";
 import img1 from "../../assets/Home/img1.jpg";
 import img2 from "../../assets/Home/img2.jpg";
+import img3 from "../../assets/Home/img3.jpg";
 import styles from "../Home/home.module.css";
 function Home() {
   return (
@@ -34,7 +35,7 @@ function Home() {
           </div>
         </div>
       </Container>
-      <Container>
+      <Container className={styles.container2}>
         <div className={`${styles.section2}`}>
           <div className="row">
             <div className="col-md-6">
@@ -56,11 +57,20 @@ function Home() {
                 because of a simple battery failure or blown fuse and these are
                 more common occurrences than people would assume.
               </p>
-              <p>
-                The price of a scheduled maintenance program is small in
-                comparison to the cost to your organisation of a generator that
-                lets you down when the power goes out.
-              </p>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Container>
+        <div className={styles.section3}>
+          <div className="row">
+            <div className="col-md-6">
+              <h1>MAINS FAILURE <span>TESTING</span></h1>
+              <p>Through our experience with clients, it has been found that on average a generator is actually called to operate about once a year. Even though the generator is not used regularly, there are potential issues with the generator not performing when your organisation needs it most</p>
+              <p>Servicing covers the majority of the potential issues of a generator not starting however to ensure your generator is 100% reliable there is one important service recommendation which is to complete a mains failure test.</p>
+            </div>
+            <div className="col-md-6">
+              <img src={img3} alt="abi" />
             </div>
           </div>
         </div>
