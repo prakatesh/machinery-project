@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div>
@@ -23,13 +23,13 @@ function Footer() {
               </p>
               <div className={styles.icon}>
                 <h1>
-                  <FacebookIcon />
+                  <a href="https://facebook.com/"><FacebookIcon /></a>
                 </h1>
                 <h1>
-                  <EmailIcon />
+                  <a href="https://mail.google.com/"><EmailIcon /></a>
                 </h1>
                 <h1>
-                  <InstagramIcon />
+                  <a href="https://instagram.com/"><InstagramIcon /></a>
                 </h1>
               </div>
             </div>
@@ -44,7 +44,7 @@ function Footer() {
             <div className="col-md-3">
               <div className={styles.info}>
                 <h2>Contact us</h2>
-                <EmailIcon /> infomail@gmail.com
+                <a href="mailto:infomail@gmail.com"><EmailIcon /> infomail@gmail.com </a>
                 <br />
                 <LocalPhoneIcon /> +91 8610126966
                 <br />

@@ -13,7 +13,7 @@ const Navbar = () => {
     <div>
       <nav className={styles.nav}>
         <div className={styles.navheader}>
-          <img src={logo} alt="dsf" />
+          <NavLink to="/"><img src={logo} alt="logo" className={`${styles.logo}`}/></NavLink>
           <div className={styles.link}>
             <NavLink style={inlinestyles} to="/">
               Home
