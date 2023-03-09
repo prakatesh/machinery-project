@@ -1,19 +1,18 @@
-.nav
-{
+.nav {
   line-height: 5vh;
   background-color: black;
 }
-.navheader img{
+.navheader img {
   padding-top: 3px;
   padding-right: 2px;
   width: 40px;
   border-radius: 50%;
   float: left;
 }
-.nava{
+.link {
   padding-left: 115vh;
 }
-.nava a{
+.link a {
   text-decoration: none;
   padding-left: 7vh;
 }
