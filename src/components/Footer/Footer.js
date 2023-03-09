@@ -54,7 +54,7 @@ function Footer() {
             <div className="col-md-3">
               <div className={styles.signup}>
                 <h2>Sign up for update</h2>
-                <input placeholder="email *" />
+                <input placeholder="Email *" />
                 <br />
                 <button>Sign up</button>
               </div>
