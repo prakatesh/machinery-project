@@ -7,8 +7,8 @@
 }
 .login
 {
-    padding-left: 70vh;
-    padding-right: 70vh;
+    padding-left: 40vh;
+    padding-right: 40vh;
     padding-top: 10vh;
 }
 .card h6{
@@ -24,7 +24,7 @@
     padding-top: 1vh;
 }
 .card a{
-    
+
     text-decoration: none;
     margin-left: 25vh;
 }

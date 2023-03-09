@@ -4,7 +4,7 @@ import About from "../About/About";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Service from '../Service/Service'
-import Signup from "../Sign up/Signup";
+import Signup from "../SignUp/Signup";
 const Routers = () => {
   return (
     <div>

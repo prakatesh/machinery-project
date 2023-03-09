@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Footer/footer.module.css";
-import logo from "../../assets/Footer/logo.jpg";
+import logo from "../../assets/Footer/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
