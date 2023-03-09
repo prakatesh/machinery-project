@@ -1,4 +1,3 @@
-import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Routers from "./components/Routers/Routers";
 
@@ -7,7 +6,6 @@ function App() {
     <div >
       <Navbar />
       <Routers />
-      <Footer/>
     </div>
   );
 }
