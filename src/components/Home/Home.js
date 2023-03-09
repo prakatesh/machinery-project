@@ -33,7 +33,7 @@ function Home() {
       </div>
       <div className={styles.section2}>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-5">
             <img src={img2} alt="hj" />
           </div>
           <div className="col-md-6">
