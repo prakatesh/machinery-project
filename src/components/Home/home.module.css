@@ -19,5 +19,8 @@
   font-weight: 500;
 }
 .section2 img {
-  width: 90%;
+  width: 100%;
+}
+.section2 {
+  padding-bottom: 5vh;
 }
