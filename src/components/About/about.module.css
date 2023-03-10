@@ -1,0 +1,36 @@
+.section1 img{
+    width:105%;
+}
+.section1 h1 span{
+    text-transform: uppercase;
+    color: red;
+}
+.about
+{
+    padding-bottom: 5vh;
+    padding-top: 3vh;
+}
+.section1 p{
+    font-size: 2vh;
+    font-weight: 500;
+}
+.section2 img{
+    width: 20%;
+}
+.section2{
+    padding:3vh;
+    line-height: 5vh;
+    text-align: center;
+    margin-top: 5vh;
+    color: white;
+    background-color: rgb(147, 32, 32);
+}
+.section2 p{
+    font-size: 2vh;
+    font-weight: 500;
+}
+.section2 h1{
+    font-weight: 700;
+    /* font-family: var(--font-heading); */
+    text-transform: uppercase;
+}

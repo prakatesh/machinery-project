@@ -24,14 +24,10 @@
     padding-top: 1vh;
 }
 .card a{
-
     text-decoration: none;
-    margin-left: 25vh;
 }
 .link{
-    /* flex-direction: row; */
-    display: inline-block;
-    padding-top: 1vh;
+    padding-top: 2vh;
 }
 .card button{
     font-size: larger;
