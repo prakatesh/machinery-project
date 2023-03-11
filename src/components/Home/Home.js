@@ -5,7 +5,10 @@ import img2 from "../../assets/Home/img2.jpg";
 import img3 from "../../assets/Home/img3.jpg";
 import Footer from "../Footer/Footer";
 import styles from "../Home/home.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Home() {
+  AOS.init();
   return (
     <div>
       <Container>
@@ -30,8 +33,9 @@ function Home() {
               </p>
             </div>
             <div className="col-md-6">
-              {/* <div data-aos="fade-down"></div> */}
-              <img src={img1} alt="hj" />
+              <div data-aos="fade-left" data-aos-duration="1000"data-aos-delay="50" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+                <img src={img1} alt="hj" />
+              </div>
             </div>
           </div>
         </div>
@@ -40,7 +44,9 @@ function Home() {
         <div className={`${styles.section2}`}>
           <div className="row">
             <div className="col-md-6">
-              <img src={img2} alt="hj" />
+              <div data-aos="fade-right" data-aos-duration="1000"data-aos-delay="50" data-aos-mirror="true" data-aos-anchor-placement="top-center" >
+                <img src={img2} alt="hj" />
+              </div>
             </div>
             <div className="col-md-6">
               <h1>
@@ -71,7 +77,9 @@ function Home() {
               <p>Servicing covers the majority of the potential issues of a generator not starting however to ensure your generator is 100% reliable there is one important service recommendation which is to complete a mains failure test.</p>
             </div>
             <div className="col-md-6">
-              <img src={img3} alt="abi" />
+              <div data-aos="flip-right">
+                <img src={img3} alt="abi" />
+              </div>
             </div>
           </div>
         </div>
