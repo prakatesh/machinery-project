@@ -1,8 +1,12 @@
 import { Container } from "@mui/system";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../Login/login.module.css";
 function Login() {
+  const ref1=useRef();
+  useEffect(()=>{
+    ref1.current.focus();
+  },[])
   return (
     <div>
       <Container>
@@ -11,7 +15,7 @@ function Login() {
             <h6>Welcome !!</h6>
             <label>Email</label>
             <br />
-            <input type="text" />
+            <input ref={ref1} type="text" />
             <br />
             <label>Password</label>
             <br />

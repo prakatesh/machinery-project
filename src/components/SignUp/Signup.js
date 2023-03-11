@@ -1,7 +1,11 @@
 import { Container } from "@mui/system";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../SignUp/signup.module.css";
 function Signup() {
+  const inputfield=useRef();
+  useEffect(()=>{
+    inputfield.current.focus()
+  })
   return (
     <div>
       <Container>
@@ -10,7 +14,7 @@ function Signup() {
             <h6>Welcome</h6>
             <label>Name</label>
             <br />
-            <input type="text" />
+            <input ref={inputfield} type="text" />
             <br />
             <label>Email</label>
             <br />
