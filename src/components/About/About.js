@@ -5,10 +5,7 @@ import img2 from '../../assets/About/img2.png'
 import icon1 from '../../assets/About/icon1.png'
 import Footer from '../Footer/Footer'
 import { Container } from '@mui/system'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 function About() {
-  AOS.init();
   return (
     <div>
       <div className={styles.about}>
