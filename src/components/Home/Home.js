@@ -33,7 +33,7 @@ function Home() {
               </p>
             </div>
             <div className="col-md-6">
-              <div data-aos="fade-left" data-aos-duration="1000"data-aos-delay="50" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+              <div data-aos="flip-right"  data-aos-duration="1000" >
                 <img src={img1} alt="hj" />
               </div>
             </div>
@@ -44,9 +44,9 @@ function Home() {
         <div className={`${styles.section2}`}>
           <div className="row">
             <div className="col-md-6">
-              <div data-aos="fade-right" data-aos-duration="1000"data-aos-delay="50" data-aos-mirror="true" data-aos-anchor-placement="top-center" >
-                <img src={img2} alt="hj" />
-              </div>
+            <div data-aos="flip-left"  data-aos-duration="1000" >
+              <img src={img2} alt="hj"/>
+            </div>
             </div>
             <div className="col-md-6">
               <h1>
@@ -77,8 +77,8 @@ function Home() {
               <p>Servicing covers the majority of the potential issues of a generator not starting however to ensure your generator is 100% reliable there is one important service recommendation which is to complete a mains failure test.</p>
             </div>
             <div className="col-md-6">
-              <div data-aos="flip-right">
-                <img src={img3} alt="abi" />
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src={img3} alt="abi"/>
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@ function About() {
                   <p>Genergy Australia is proudly an Australian, family owned business which started with only one client. One client grew to many due to Genergy Australia’s unwavering commitment to its customers and their generators’ needs. This dedication has seen many of the original customers still using Genergy Australia as their generator maintenance and repair specialist today.</p>
               </div>
               <div className="col-md-6">
-                <div data-aos="zoom-in-left" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+                <div data-aos="zoom-in-left" data-aos-duration="1000">
                   <img src={img1} alt="bjnk" />
                 </div>
               </div>
