@@ -40,15 +40,13 @@
   font-weight: 500;
   padding-left: 2vh;
 }
-.container2
-{
+.container2 {
   background-color: #796b6b79;
 }
-.section3
-{
+.section3 {
   padding: 5vh;
 }
-.section3 img{
+.section3 img {
   width: 110%;
 }
 .section3 h1 {
@@ -63,6 +61,6 @@
   font-weight: 500;
   padding-left: 2vh;
 }
-.section3 h1 span{
+.section3 h1 span {
   color: red;
 }

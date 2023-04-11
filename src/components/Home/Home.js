@@ -5,8 +5,8 @@ import img2 from "../../assets/Home/img2.jpg";
 import img3 from "../../assets/Home/img3.jpg";
 import Footer from "../Footer/Footer";
 import styles from "../Home/home.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Home() {
   AOS.init();
   return (
@@ -33,7 +33,13 @@ function Home() {
               </p>
             </div>
             <div className="col-md-6">
-              <div data-aos="fade-left" data-aos-duration="1000"data-aos-delay="50" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="50"
+                data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"
+              >
                 <img src={img1} alt="hj" />
               </div>
             </div>
@@ -44,7 +50,13 @@ function Home() {
         <div className={`${styles.section2}`}>
           <div className="row">
             <div className="col-md-6">
-              <div data-aos="fade-right" data-aos-duration="1000"data-aos-delay="50" data-aos-mirror="true" data-aos-anchor-placement="top-center" >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="50"
+                data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"
+              >
                 <img src={img2} alt="hj" />
               </div>
             </div>
@@ -72,9 +84,22 @@ function Home() {
         <div className={styles.section3}>
           <div className="row">
             <div className="col-md-6">
-              <h1>MAINS FAILURE <span>TESTING</span></h1>
-              <p>Through our experience with clients, it has been found that on average a generator is actually called to operate about once a year. Even though the generator is not used regularly, there are potential issues with the generator not performing when your organisation needs it most</p>
-              <p>Servicing covers the majority of the potential issues of a generator not starting however to ensure your generator is 100% reliable there is one important service recommendation which is to complete a mains failure test.</p>
+              <h1>
+                MAINS FAILURE <span>TESTING</span>
+              </h1>
+              <p>
+                Through our experience with clients, it has been found that on
+                average a generator is actually called to operate about once a
+                year. Even though the generator is not used regularly, there are
+                potential issues with the generator not performing when your
+                organisation needs it most
+              </p>
+              <p>
+                Servicing covers the majority of the potential issues of a
+                generator not starting however to ensure your generator is 100%
+                reliable there is one important service recommendation which is
+                to complete a mains failure test.
+              </p>
             </div>
             <div className="col-md-6">
               <div data-aos="flip-right">
@@ -84,7 +109,7 @@ function Home() {
           </div>
         </div>
       </Container>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
