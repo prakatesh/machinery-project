@@ -5,16 +5,17 @@ import img2 from "../../assets/Home/img2.jpg";
 import img3 from "../../assets/Home/img3.jpg";
 import Footer from "../Footer/Footer";
 import styles from "../Home/home.module.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 function Home() {
-  AOS.init();
   return (
     <div>
       <Container>
         <div className={styles.section1}>
           <div className="row">
-            <div className="col-md-6">
+            <div
+              className="col-md-6"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <h1>
                 Preventative <span>Maintenance</span>
               </h1>
@@ -33,13 +34,7 @@ function Home() {
               </p>
             </div>
             <div className="col-md-6">
-              <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="50"
-                data-aos-mirror="true"
-                data-aos-anchor-placement="top-center"
-              >
+              <div data-aos="flip-right" data-aos-duration="2000">
                 <img src={img1} alt="hj" />
               </div>
             </div>
@@ -50,17 +45,15 @@ function Home() {
         <div className={`${styles.section2}`}>
           <div className="row">
             <div className="col-md-6">
-              <div
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="50"
-                data-aos-mirror="true"
-                data-aos-anchor-placement="top-center"
-              >
+              <div data-aos="flip-left" data-aos-duration="2000">
                 <img src={img2} alt="hj" />
               </div>
             </div>
-            <div className="col-md-6">
+            <div
+              className="col-md-6"
+              data-aos="flip-right"
+              data-aos-duration="2000"
+            >
               <h1>
                 SCHEDULED <span>Maintenance</span>
               </h1>
@@ -83,7 +76,11 @@ function Home() {
       <Container>
         <div className={styles.section3}>
           <div className="row">
-            <div className="col-md-6">
+            <div
+              className="col-md-6"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <h1>
                 MAINS FAILURE <span>TESTING</span>
               </h1>
@@ -102,7 +99,7 @@ function Home() {
               </p>
             </div>
             <div className="col-md-6">
-              <div data-aos="flip-right">
+              <div data-aos="flip-right" data-aos-duration="2000">
                 <img src={img3} alt="abi" />
               </div>
             </div>
