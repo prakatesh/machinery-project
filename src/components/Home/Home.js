@@ -45,7 +45,7 @@ function Home() {
               <img src={img2} alt="hj"/>
             </div>
             </div>
-            <div className="col-md-6" data-aos="flip-right"  data-aos-duration="2000">
+            <div className="col-md-6" data-aos="flip-right  "  data-aos-duration="2000">
               <h1>
                 SCHEDULED <span>Maintenance</span>
               </h1>
