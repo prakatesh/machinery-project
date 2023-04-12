@@ -11,7 +11,11 @@ function Home() {
       <Container>
         <div className={styles.section1}>
           <div className="row">
-            <div className="col-md-6" data-aos="flip-left"  data-aos-duration="2000">
+            <div
+              className="col-md-6"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <h1>
                 Preventative <span>Maintenance</span>
               </h1>
@@ -30,7 +34,7 @@ function Home() {
               </p>
             </div>
             <div className="col-md-6">
-              <div data-aos="flip-right"  data-aos-duration="2000" >
+              <div data-aos="flip-right" data-aos-duration="2000">
                 <img src={img1} alt="hj" />
               </div>
             </div>
@@ -41,11 +45,20 @@ function Home() {
         <div className={`${styles.section2}`}>
           <div className="row">
             <div className="col-md-6">
-            <div data-aos="flip-left"  data-aos-duration="2000" >
-              <img src={img2} alt="hj"/>
+              <div data-aos="flip-left" data-aos-duration="2000">
+                <img src={img2} alt="hj" />
+              </div>
             </div>
+<<<<<<< HEAD
             </div>
             <div className="col-md-6" data-aos="flip-right  "  data-aos-duration="2000">
+=======
+            <div
+              className="col-md-6"
+              data-aos="flip-right"
+              data-aos-duration="2000"
+            >
+>>>>>>> 0a423a01bdb1216115b25abefbcf110c40c96277
               <h1>
                 SCHEDULED <span>Maintenance</span>
               </h1>
@@ -68,20 +81,37 @@ function Home() {
       <Container>
         <div className={styles.section3}>
           <div className="row">
-            <div className="col-md-6" data-aos="flip-left"  data-aos-duration="2000">
-              <h1>MAINS FAILURE <span>TESTING</span></h1>
-              <p>Through our experience with clients, it has been found that on average a generator is actually called to operate about once a year. Even though the generator is not used regularly, there are potential issues with the generator not performing when your organisation needs it most</p>
-              <p>Servicing covers the majority of the potential issues of a generator not starting however to ensure your generator is 100% reliable there is one important service recommendation which is to complete a mains failure test.</p>
+            <div
+              className="col-md-6"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
+              <h1>
+                MAINS FAILURE <span>TESTING</span>
+              </h1>
+              <p>
+                Through our experience with clients, it has been found that on
+                average a generator is actually called to operate about once a
+                year. Even though the generator is not used regularly, there are
+                potential issues with the generator not performing when your
+                organisation needs it most
+              </p>
+              <p>
+                Servicing covers the majority of the potential issues of a
+                generator not starting however to ensure your generator is 100%
+                reliable there is one important service recommendation which is
+                to complete a mains failure test.
+              </p>
             </div>
             <div className="col-md-6">
               <div data-aos="flip-right" data-aos-duration="2000">
-                <img src={img3} alt="abi"/>
+                <img src={img3} alt="abi" />
               </div>
             </div>
           </div>
         </div>
       </Container>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
