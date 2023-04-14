@@ -49,16 +49,11 @@ function Home() {
                 <img src={img2} alt="hj" />
               </div>
             </div>
-<<<<<<< HEAD
-            </div>
-            <div className="col-md-6" data-aos="flip-right  "  data-aos-duration="2000">
-=======
             <div
               className="col-md-6"
               data-aos="flip-right"
               data-aos-duration="2000"
             >
->>>>>>> 0a423a01bdb1216115b25abefbcf110c40c96277
               <h1>
                 SCHEDULED <span>Maintenance</span>
               </h1>
