@@ -1,8 +1,8 @@
-var express=require('express')
-var app=express()
+var express = require("express");
+var app = express();
 
-require('./connect')
+require("./connect");
 
-app.listen(8000,()=>
-{ console.log("port is listening to 8000")
-})
+app.listen(8000, () => {
+  console.log("Port is listening on 8000");
+});
