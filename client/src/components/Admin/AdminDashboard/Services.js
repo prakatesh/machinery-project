@@ -1,4 +1,4 @@
-import SideNav from "./SideNav";
+import AdminDashboard from "./AdminDashboard";
 import React from "react";
 import Box from "@mui/material/Box";
 
@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div>
       <Box sx={{ display: "flex" }}>
-        <SideNav />
+        <AdminDashboard />
 
         <Box
           component="main"
