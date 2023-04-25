@@ -55,6 +55,19 @@ function UserDashboard(props) {
       </Toolbar>
       <Divider />
       <List>
+      <ListItem
+          disablePadding
+          onClick={() => {
+            navigate("/user/maintenance");
+          }}
+        >
+          <ListItemButton>
+            <ListItemIcon>
+              <InventoryIcon />
+            </ListItemIcon>
+            <ListItemText primary="Maintenance" />
+          </ListItemButton>
+        </ListItem>
         <ListItem
           disablePadding
           onClick={() => {
