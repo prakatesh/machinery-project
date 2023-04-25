@@ -20,7 +20,7 @@ import Typography from "@mui/material/Typography";
 
 const drawerWidth = 240;
 
-function ResponsiveDrawer(props) {
+function AdminDashboard(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -96,7 +96,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Dashboard
+            Admin Dashboard
           </Typography>
         </Toolbar>
       </AppBar>
@@ -181,7 +181,7 @@ function ResponsiveDrawer(props) {
   );
 }
 
-ResponsiveDrawer.propTypes = {
+AdminDashboard.propTypes = {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -189,4 +189,4 @@ ResponsiveDrawer.propTypes = {
   window: PropTypes.func,
 };
 
-export default ResponsiveDrawer;
+export default AdminDashboard;
