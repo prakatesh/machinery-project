@@ -1,10 +1,39 @@
 import { Container } from "@mui/system";
-import React, { useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { NavLink,useNavigate } from "react-router-dom";
 import styles from "../Login/login.module.css";
 import Navbar from "../Navbar/Navbar";
 function Login() {
   const ref1 = useRef();
+  const navigate=useNavigate()
+
+  const [email,setemail]=useState('')
+  const [password,setpass]=useState('')
+  async function submit(){
+    const data={email:email,password:password}
+    await fetch("http://localhost:8000/user/login",{
+          body : JSON.stringify(data),
+          method : "POST",
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+          },
+        }
+        ).then((response) => response.json())
+        .then((data) =>{
+          console.log(data)
+          if(data==="correct_user")
+        {
+          navigate('/')
+        }
+        else if(data==="wrong_password")
+        {
+          alert("wrong_password")
+        }
+        else{
+          alert("wrong_user")
+        }
+      })
+  }
   useEffect(() => {
     ref1.current.focus();
   }, []);
@@ -17,11 +46,11 @@ function Login() {
             <h6>Welcome !!</h6>
             <label>Email</label>
             <br />
-            <input ref={ref1} type="text" />
+            <input ref={ref1} type="text" value={email} onChange={(e)=>setemail(e.target.value)} />
             <br />
             <label>Password</label>
             <br />
-            <input type="password" />
+            <input type="password" value={password} onChange={(e)=>setpass(e.target.value)} />
             <br />
             <div className={styles.link}>
               <NavLink>Forget Password?</NavLink>
@@ -32,7 +61,7 @@ function Login() {
               </span>
             </div>
             <div className={styles.button}>
-              <button>Login</button>
+              <button onClick={submit}>Login</button>
             </div>
           </div>
         </div>
