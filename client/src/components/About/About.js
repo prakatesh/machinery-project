@@ -4,10 +4,12 @@ import img1 from "../../assets/About/img1.jpg";
 import img2 from "../../assets/About/img2.png";
 import icon1 from "../../assets/About/icon1.png";
 import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import { Container } from "@mui/system";
 function About() {
   return (
     <div>
+      <Navbar />
       <div className={styles.about}>
         <Container>
           <div className={styles.section1}>

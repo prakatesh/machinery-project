@@ -2,13 +2,15 @@ import { Container } from "@mui/system";
 import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../Login/login.module.css";
+import Navbar from "../Navbar/Navbar";
 function Login() {
-  const ref1=useRef();
-  useEffect(()=>{
+  const ref1 = useRef();
+  useEffect(() => {
     ref1.current.focus();
-  },[])
+  }, []);
   return (
     <div>
+      <Navbar />
       <Container>
         <div className={styles.login}>
           <div className={styles.card}>

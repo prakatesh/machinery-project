@@ -1,5 +1,6 @@
 import { Container } from "@mui/system";
 import React from "react";
+import Navbar from "../Navbar/Navbar";
 import img1 from "../../assets/Home/img1.jpg";
 import img2 from "../../assets/Home/img2.jpg";
 import img3 from "../../assets/Home/img3.jpg";
@@ -8,6 +9,7 @@ import styles from "../Home/home.module.css";
 function Home() {
   return (
     <div>
+      <Navbar />
       <Container>
         <div className={styles.section1}>
           <div className="row">

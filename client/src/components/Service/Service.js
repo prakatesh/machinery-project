@@ -3,10 +3,12 @@
 import { Container } from "@mui/material";
 import React from "react";
 import ServiceCard from "./ServiceCard";
+import Navbar from "../Navbar/Navbar";
 
 function Service() {
   return (
     <div>
+      <Navbar />
       <Container>
         <ServiceCard />
       </Container>
