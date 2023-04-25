@@ -12,6 +12,9 @@ import Users from "../Admin/AdminDashboard/Users";
 import ActiveUsers from "../Admin/AdminDashboard/ActiveUsers";
 import Products from "../Admin/AdminDashboard/Products";
 import Services from "../Admin/AdminDashboard/Services";
+import Profile from "../User/UserDashboard/Profile";
+import UserProduct from "../User/UserDashboard/UserProduct";
+import UserServices from "../User/UserDashboard/UserServices";
 
 const Routers = () => {
   return (
@@ -28,6 +31,9 @@ const Routers = () => {
         <Route path="/admin/products" element={<Products />}></Route>
         <Route path="/admin/services" element={<Services />}></Route>
         <Route path="/user/dashboard" element={<UserDashboard />}></Route>
+        <Route path="/user/profile" element={<Profile />}></Route>
+        <Route path="/user/products" element={<UserProduct />}></Route>
+        <Route path="/user/services" element={<UserServices />}></Route>
         <Route path="/maintenance" element={<Maintenance />}></Route>
       </Routes>
     </div>

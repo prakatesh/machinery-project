@@ -41,7 +41,15 @@ function AdminDashboard(props) {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap component="div">
+        <Typography
+          style={{ cursor: "pointer" }}
+          variant="h6"
+          noWrap
+          component="div"
+          onClick={() => {
+            navigate("/admin/dashboard");
+          }}
+        >
           Admin Dashboard
         </Typography>
       </Toolbar>
