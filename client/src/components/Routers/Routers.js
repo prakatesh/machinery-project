@@ -5,8 +5,8 @@ import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Service from "../Service/Service";
 import Signup from "../SignUp/Signup";
-import AdminDashboard from "../AdminDashboard/AdminDashboard";
-import UserDashboard from "../UserDashboard/UserDashboard";
+import AdminDashboard from "../Admin/AdminDashboard/AdminDashboard";
+import UserDashboard from "../User/UserDashboard/UserDashboard";
 import Maintenance from "../Mainetenance/Maintenance";
 const Routers = () => {
   return (
