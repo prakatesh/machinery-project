@@ -8,6 +8,11 @@ import Signup from "../SignUp/Signup";
 import AdminDashboard from "../Admin/AdminDashboard/AdminDashboard";
 import UserDashboard from "../User/UserDashboard/UserDashboard";
 import Maintenance from "../Mainetenance/Maintenance";
+import Users from "../Admin/AdminDashboard/Users";
+import ActiveUsers from "../Admin/AdminDashboard/ActiveUsers";
+import Products from "../Admin/AdminDashboard/Products";
+import Services from "../Admin/AdminDashboard/Services";
+
 const Routers = () => {
   return (
     <div>
@@ -18,6 +23,10 @@ const Routers = () => {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/admin/dashboard" element={<AdminDashboard />}></Route>
+        <Route path="/admin/users" element={<Users />}></Route>
+        <Route path="/admin/active-users" element={<ActiveUsers />}></Route>
+        <Route path="/admin/products" element={<Products />}></Route>
+        <Route path="/admin/services" element={<Services />}></Route>
         <Route path="/user/dashboard" element={<UserDashboard />}></Route>
         <Route path="/maintenance" element={<Maintenance />}></Route>
       </Routes>
