@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import Service from "../Service/Service";
 import Signup from "../SignUp/Signup";
 import Dashboard from "../Dashboard/Dashboard";
+import Maintenance from "../Mainetenance/Maintenance";
 const Routers = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Routers = () => {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/maintenance" element={<Maintenance />}></Route>
       </Routes>
     </div>
   );

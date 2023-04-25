@@ -13,7 +13,9 @@ const Navbar = () => {
     <div>
       <nav className={styles.nav}>
         <div className={styles.navheader}>
-          <NavLink to="/"><img src={logo} alt="logo" className={`${styles.logo}`}/></NavLink>
+          <NavLink to="/">
+            <img src={logo} alt="logo" className={`${styles.logo}`} />
+          </NavLink>
           <div className={styles.link}>
             <NavLink style={inlinestyles} to="/">
               Home
@@ -26,6 +28,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink style={inlinestyles} to="/login">
               Login
+            </NavLink>
+            <NavLink style={inlinestyles} to="/maintenance">
+              Maintenance
             </NavLink>
           </div>
         </div>
