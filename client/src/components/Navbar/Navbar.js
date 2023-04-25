@@ -29,9 +29,7 @@ const Navbar = () => {
             <NavLink style={inlinestyles} to="/login">
               Login
             </NavLink>
-            <NavLink style={inlinestyles} to="/maintenance">
-              Maintenance
-            </NavLink>
+            
           </div>
         </div>
       </nav>

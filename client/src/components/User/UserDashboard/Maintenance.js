@@ -4,13 +4,13 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Card, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 
 const Mainetenance = () => {
 
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
 
   const [oil,setoil]=React.useState('')
   const [temp,settemp]=React.useState('')
@@ -37,7 +37,7 @@ const Mainetenance = () => {
           console.log(data)
           if(data==="done")
         {
-          navigate('/')
+          alert("data saved")
         }
       })
   }
