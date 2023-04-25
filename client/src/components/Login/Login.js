@@ -19,18 +19,24 @@ function Login() {
           },
         }
         ).then((response) => response.json())
-        .then((data) =>{
-          console.log(data)
-          if(data==="correct_user")
+        .then((data1) =>{
+          if(data1==="wrong_user")
         {
-          navigate('/')
+          alert("wrong_user")
         }
-        else if(data==="wrong_password")
+        else if(data1==="wrong_password")
         {
           alert("wrong_password")
         }
         else{
-          alert("wrong_user")
+          if(data1.data.role==="User")
+          {
+            navigate('/user/dashboard')
+          }
+          else if(data1.data.role==="Admin")
+          {
+            navigate('/admin/dashboard')
+          }
         }
       })
   }
