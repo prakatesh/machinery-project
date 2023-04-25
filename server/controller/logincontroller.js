@@ -10,7 +10,6 @@ exports.login=async(req,res)=>{
                 res.json("wrong_user")
                 console.log("wrong user")
             }
-
             else if(data.password!==password)
             {
                 res.json("wrong_password")
@@ -18,8 +17,9 @@ exports.login=async(req,res)=>{
             }
             else
             {
-                res.json("correct_user")
+                // res.json("correct_user")
                 console.log("correct user")
+                res.json({status:200,data:data})
             }
     }
     catch(e)
