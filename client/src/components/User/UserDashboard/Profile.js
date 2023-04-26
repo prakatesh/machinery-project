@@ -1,22 +1,25 @@
 import UserDashboard from "./UserDashboard";
-import React, { useEffect } from "react";
+import React, {  useState } from "react";
 import Box from "@mui/material/Box";
-
+import { useAuth } from "../../../Context/Auth";
 const drawerWidth = 240;
 
 const Profile = () => {
-  // const [array,setarry]=useState([])
 
-  useEffect(()=>{
-    fetch("http://localhost:8000/user/Profile",{
-        method:"get"
-    }).then((res)=>res.json())
-    .then((data)=>{
-        // console.log(data.data)
-        // setarry(data.data)
-      
-    })
-  },[])
+  const [array,setarry]=useState([""])
+  const auth=useAuth()
+  async function click(){
+    
+    fetch(`http://localhost:8000/user/profile/${auth.user}`,{
+          method : "POST",
+        }
+        ).then((response) => response.json())
+        .then((data) =>{
+          setarry(data.data)
+          console.log(data.data)
+      })
+  }
+
   return (
     <div>
       <Box sx={{ display: "flex" }}>
@@ -30,7 +33,16 @@ const Profile = () => {
             width: { sm: `calc(100% - ${drawerWidth}px)` },
           }}
         >
-          <h2>Profile</h2>
+          <button onClick={click}>Fetch</button>
+          <div>
+            <table style={{border:"2px solid black"}}>
+              <tr style={{border:"2px solid black"}}><td style={{border:"2px solid black",padding:"2vh"}}>Name</td><td>{array[0].name}</td></tr>
+              <tr style={{border:"2px solid black"}}><td style={{border:"2px solid black",padding:"2vh"}}>Email</td><td>{array[0].email}</td></tr>
+              <tr style={{border:"2px solid black"}}><td style={{border:"2px solid black",padding:"2vh"}}>Role</td><td>{array[0].role}</td></tr> 
+              <tr style={{border:"2px solid black"}}><td style={{border:"2px solid black",padding:"2vh"}}>Password</td><td>{array[0].password}</td></tr>
+              <tr style={{border:"2px solid black"}}><td style={{border:"2px solid black",padding:"2vh" }}>Active</td><td>{array[0].active}</td></tr>
+            </table>
+          </div> 
         </Box>
       </Box>
     </div>

@@ -3,10 +3,11 @@ import React, { useEffect, useRef, useState} from "react";
 import { NavLink,useNavigate } from "react-router-dom";
 import styles from "../Login/login.module.css";
 import Navbar from "../Navbar/Navbar";
+import {useAuth} from '../../Context/Auth'
 function Login() {
   const ref1 = useRef();
   const navigate=useNavigate()
-
+  const auth=useAuth()
   // const [semail,setsemail]=useState('')
 
   const [email,setemail]=useState('')
@@ -35,7 +36,7 @@ function Login() {
           {
             if(data1.data.active===1)
             {
-              // auth.login(data1.data.email)
+              auth.login(data1.data.email)
               navigate('/user/dashboard')
             }
             else{
