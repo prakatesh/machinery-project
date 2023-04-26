@@ -1,10 +1,22 @@
 import UserDashboard from "./UserDashboard";
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 
 const drawerWidth = 240;
 
 const Profile = () => {
+  // const [array,setarry]=useState([])
+
+  useEffect(()=>{
+    fetch("http://localhost:8000/user/Profile",{
+        method:"get"
+    }).then((res)=>res.json())
+    .then((data)=>{
+        // console.log(data.data)
+        // setarry(data.data)
+      
+    })
+  },[])
   return (
     <div>
       <Box sx={{ display: "flex" }}>

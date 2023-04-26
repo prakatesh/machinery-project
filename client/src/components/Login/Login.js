@@ -1,5 +1,5 @@
 import { Container } from "@mui/system";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState} from "react";
 import { NavLink,useNavigate } from "react-router-dom";
 import styles from "../Login/login.module.css";
 import Navbar from "../Navbar/Navbar";
@@ -7,9 +7,11 @@ function Login() {
   const ref1 = useRef();
   const navigate=useNavigate()
 
+  // const [semail,setsemail]=useState('')
+
   const [email,setemail]=useState('')
   const [password,setpass]=useState('')
-  async function submit(){
+  async function submit(props){
     const data={email:email,password:password}
     await fetch("http://localhost:8000/user/login",{
           body : JSON.stringify(data),
@@ -31,11 +33,25 @@ function Login() {
         else{
           if(data1.data.role==="User")
           {
-            navigate('/user/dashboard')
+            if(data1.data.active===1)
+            {
+              // auth.login(data1.data.email)
+              navigate('/user/dashboard')
+            }
+            else{
+              alert("The admin did not active you so Contact the admin")
+            }
           }
           else if(data1.data.role==="Admin")
           {
-            navigate('/admin/dashboard')
+            if(data1.data.active===1)
+            {
+              // data1.data.email;
+              navigate('/admin/dashboard')
+            }
+            else{
+              alert("The admin did not active you so Contact the admin")
+            }
           }
         }
       })
@@ -77,3 +93,5 @@ function Login() {
 }
 
 export default Login;
+
+// export const AuthContext=React.createContext()
