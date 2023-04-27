@@ -4,6 +4,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Card, Row, Col } from "react-bootstrap";
+import { useAuth } from "../../../Context/Auth";
 // import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
@@ -19,11 +20,12 @@ const Mainetenance = () => {
   const [date,setdate]=React.useState('')
   const [oilpress,setoilpress]=React.useState('')
 
+  const auth=useAuth()
 
   async function submit(e)
   {
     e.preventDefault()
-    const data={oil:oil,temp:temp,gas:gas,hours:hours,date:date,oilpress:oilpress}
+    const data={oil:oil,temp:temp,gas:gas,hours:hours,date:date,oilpress:oilpress,email:`${auth.user}`}
     console.log(data)
     await fetch("http://localhost:8000/user/manage",{
           body : JSON.stringify(data),

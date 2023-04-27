@@ -1,13 +1,24 @@
 import UserDashboard from "./UserDashboard";
-import React, {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import { useAuth } from "../../../Context/Auth";
+import { useNavigate } from "react-router-dom";
 const drawerWidth = 240;
 
 const Profile = () => {
 
+  const navigate=useNavigate()
   const [array,setarry]=useState([""])
   const auth=useAuth()
+
+  useEffect(()=>{
+    if(`${auth.user}`==="null")
+    {
+      
+      alert("please login")
+      navigate('/login')
+    }
+  },[])
   async function click(){
     
     fetch(`http://localhost:8000/user/profile/${auth.user}`,{
