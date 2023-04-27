@@ -15,7 +15,6 @@ import Services from "../Admin/AdminDashboard/Services";
 import Profile from "../User/UserDashboard/Profile";
 import UserProduct from "../User/UserDashboard/UserProduct";
 import UserServices from "../User/UserDashboard/UserServices";
-// import { Authenication } from "../../Context/Auth";
 
 
 const Routers= () => {
@@ -37,7 +36,6 @@ const Routers= () => {
         <Route path="/user/products" element={<UserProduct />}></Route>
         <Route path="/user/services" element={<UserServices />}></Route>
         <Route path="/user/maintenance" element={<Maintenance />}></Route>
-      {/* </Authenication> */}
       </Routes>
     </div>
   );

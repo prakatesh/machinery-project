@@ -1,8 +1,8 @@
-const manageMdules=require('../modules/manage')
+const manageModules=require('../modules/manage')
 
 exports.manage=async(req,res)=>
 {
-    const{oil,temp,gas,hours,date,oilpress}=req.body;
+    const{oil,temp,gas,hours,date,oilpress,email}=req.body;
     const data=
     {
         oil:oil,
@@ -10,10 +10,11 @@ exports.manage=async(req,res)=>
         gas:gas,
         hours:hours,
         date:date,
-        oilpress:oilpress
+        oilpress:oilpress,
+        email:email
     }
     try{
-        await manageMdules.create([data])
+        await manageModules.create([data])
         res.json("done")
         console.log("Manage data is inserted")
     }
@@ -21,4 +22,20 @@ exports.manage=async(req,res)=>
     {
         console.log(e)
     }
+}
+
+exports.service=async(req,res)=>{
+    try{
+        const email=req.params.email
+        console.log(email)
+        const data=await manageModules.find({email:email})
+        console.log("the data is send user")
+        console.log(data)
+        res.json({status:200,data:data})
+        }
+    catch(e)
+    {
+        console.log(e)
+    }
+    
 }

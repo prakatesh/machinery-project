@@ -24,6 +24,10 @@ const manage=mongoose.Schema({
     oilpress:{
         type:Number,
         require:true
+    },
+    email:{
+        type:String,
+        require:true
     }
 })
 

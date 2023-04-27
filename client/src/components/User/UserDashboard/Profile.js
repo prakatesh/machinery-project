@@ -18,9 +18,7 @@ const Profile = () => {
       alert("please login")
       navigate('/login')
     }
-  },[])
-  async function click(){
-    
+
     fetch(`http://localhost:8000/user/profile/${auth.user}`,{
           method : "POST",
         }
@@ -29,7 +27,8 @@ const Profile = () => {
           setarry(data.data)
           console.log(data.data)
       })
-  }
+  },[])
+ 
 
   return (
     <div>
@@ -44,7 +43,7 @@ const Profile = () => {
             width: { sm: `calc(100% - ${drawerWidth}px)` },
           }}
         >
-          <button onClick={click}>Fetch</button>
+          {/* <button onClick={click}>Fetch</button> */}
           <div>
             <table style={{border:"2px solid black"}}>
               <tr style={{border:"2px solid black"}}><td style={{border:"2px solid black",padding:"2vh"}}>Name</td><td>{array[0].name}</td></tr>
