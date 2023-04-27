@@ -29,7 +29,7 @@ exports.service=async(req,res)=>{
         const email=req.params.email
         console.log(email)
         const data=await manageModules.find({email:email})
-        console.log("the data is send user")
+        console.log("the data is send to user")
         console.log(data)
         res.json({status:200,data:data})
         }

@@ -22,7 +22,7 @@ const UserServices = () => {
           // console.log(data.data)
           setarray(data.data)
       })
-  },[])
+  })
   return (
     <div>
       <Box sx={{ display: "flex" }}>

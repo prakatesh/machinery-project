@@ -27,8 +27,7 @@ const Profile = () => {
           setarry(data.data)
           console.log(data.data)
       })
-  },[])
- 
+  })
 
   return (
     <div>
