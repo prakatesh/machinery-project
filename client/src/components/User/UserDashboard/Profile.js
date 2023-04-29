@@ -11,6 +11,8 @@ const Profile = () => {
   const [array,setarry]=useState([""])
   const auth=useAuth()
 
+  
+
   useEffect(()=>{
     if(`${auth.user}`==="null")
     {

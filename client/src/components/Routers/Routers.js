@@ -6,8 +6,8 @@ import Login from "../Login/Login";
 import Service from "../Service/Service";
 import Signup from "../SignUp/Signup";
 import AdminDashboard from "../Admin/AdminDashboard/AdminDashboard";
-import UserDashboard from "../User/UserDashboard/UserDashboard";
 import Maintenance from "../User/UserDashboard/Maintenance";
+import UserCard from "../User/UserDashboard/UserCard"
 import Users from "../Admin/AdminDashboard/Users";
 import ActiveUsers from "../Admin/AdminDashboard/ActiveUsers";
 import Products from "../Admin/AdminDashboard/Products";
@@ -31,7 +31,7 @@ const Routers= () => {
         <Route path="/admin/active-users" element={<ActiveUsers />}></Route>
         <Route path="/admin/products" element={<Products />}></Route>
         <Route path="/admin/services" element={<Services />}></Route>
-        <Route path="/user/dashboard" element={<UserDashboard />}></Route>
+        <Route path="/user/dashboard" element={<UserCard/>}></Route>
         <Route path="/user/profile" element={<Profile />}></Route>
         <Route path="/user/products" element={<UserProduct />}></Route>
         <Route path="/user/services" element={<UserServices />}></Route>

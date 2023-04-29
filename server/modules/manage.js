@@ -28,6 +28,10 @@ const manage=mongoose.Schema({
     email:{
         type:String,
         require:true
+    },
+    see:{
+        type:Number,
+        default:0
     }
 })
 

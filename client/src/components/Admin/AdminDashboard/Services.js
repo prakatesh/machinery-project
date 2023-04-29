@@ -82,7 +82,7 @@ const Services = () => {
       review:review,
       item:item
     }
-    await fetch("http://localhost:8000/admin/send",{
+    await fetch("http://localhost:8000/admin/review",{
       body : JSON.stringify(data),
       method : "post",
       headers: {
@@ -91,9 +91,10 @@ const Services = () => {
     }
     ).then((response) => response.json())
     .then((data) =>{
-      if(data==="done")
+      if(data.data==="data")
     {
-      // navigate('/')
+      alert("the review information is send")
+      setindex1(0)
     }
   })
   }
@@ -145,7 +146,7 @@ const Services = () => {
                     <td style={{border:"1px solid black"}} onClick={()=>change(i.email,i.date,i.gas,3)} value={i.gas} key={index}>{i.gas}</td>
                     <td style={{border:"1px solid black"}} onClick={()=>change(i.email,i.date,i.hours,4)} value={i.hours} key={index}>{i.hours}</td>
                     <td style={{border:"1px solid black"}}  value={i.date} key={index}>{i.date}</td>
-                    <td style={{border:"1px solid black"}} onClick={()=>change(i.email,i.datei.oilpress,5)} value={i.oilpress} key={index}>{i.oilpress}</td> 
+                    <td style={{border:"1px solid black"}} onClick={()=>change(i.email,i.date,i.oilpress,5)} value={i.oilpress} key={index}>{i.oilpress}</td> 
                   </tr>
               )
             })}
