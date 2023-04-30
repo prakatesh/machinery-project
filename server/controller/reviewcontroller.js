@@ -36,8 +36,8 @@ exports.reviewUser=async(req,res)=>{
 
 exports.comment1=async(req,res)=>{
     try{
-        const {comment,email,date}=req.body
-        const data=await reviewModel.findOneAndUpdate({email:email,date:date},{comment:comment,see:1},{new:true})
+        const {comment,email,_id}=req.body
+        const data=await reviewModel.findOneAndUpdate({email:email,_id:_id},{comment:comment,see:1},{new:true})
         console.log(data)
         res.json({status:200,data:"done"})
     }

@@ -44,10 +44,10 @@ const UserProduct = () => {
 
  
 
-  async function send(date)
+  async function send(id)
   {
 
-    const data={comment:reviewUser,email:`${auth.user}`,date:date}
+    const data={comment:reviewUser,email:`${auth.user}`,_id:id}
     fetch(`http://localhost:8000/user/comment`,{
       body : JSON.stringify(data),
           method : "put",
@@ -90,7 +90,7 @@ const UserProduct = () => {
               <p><label for="w3review">Review on date {i.date} and for {i.item} over {i.sample}</label></p>
   <textarea id="w3review" value={reviewUser} onChange={(e)=>setreviewUser(e.target.value)}  rows="4" cols="50"/>
   <br/>
-<Button onClick={()=>send(i.date)} variant="success">Send</Button> 
+<Button onClick={()=>send(i._id)} variant="success">Send</Button> 
               </>
             )
           })
