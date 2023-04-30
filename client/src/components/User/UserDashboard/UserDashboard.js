@@ -84,14 +84,14 @@ function UserDashboard(props) {
         <ListItem
           disablePadding
           onClick={() => {
-            navigate("/user/products");
+            navigate("/user/review");
           }}
         >
           <ListItemButton>
             <ListItemIcon>
               <InventoryIcon />
             </ListItemIcon>
-            <ListItemText primary="Products" />
+            <ListItemText primary="Review" />
           </ListItemButton>
         </ListItem>
         <ListItem

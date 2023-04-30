@@ -20,7 +20,6 @@ const Services = () => {
   const [review,setreview]=useState()
   const [value,setvalue]=useState()
   const [email,setemail]=useState()
-  const [item,setitem]=useState()
 
   useEffect(()=>{
     fetch("http://localhost:8000/admin/activeUser",{
@@ -49,7 +48,6 @@ const Services = () => {
     setdate(date)
     setsample(sample)
     setindex1(1)
-    setitem(value)
     if(value===1)
     {
       setvalue('Oil consumed')
@@ -80,7 +78,7 @@ const Services = () => {
       date:date,
       sample:sample,
       review:review,
-      item:item
+      item:value
     }
     await fetch("http://localhost:8000/admin/review",{
       body : JSON.stringify(data),

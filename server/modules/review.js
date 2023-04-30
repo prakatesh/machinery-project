@@ -3,11 +3,11 @@ const mongoose =require('mongoose')
 const review=mongoose.Schema({
     email:{
         type:String,
-        require:true
+        require:true,
     },
     date:{
         type:String,
-        require:true
+        require:true,
     },
     sample:{
         type:Number,
@@ -24,6 +24,10 @@ const review=mongoose.Schema({
     comment:{
         type:String,
         require:true
+    },
+    see:{
+        type:Number,
+        default:0
     }
 })
 
