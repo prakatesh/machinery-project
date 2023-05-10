@@ -5,7 +5,6 @@ import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Service from "../Service/Service";
 import Signup from "../SignUp/Signup";
-import AdminDashboard from "../Admin/AdminDashboard/AdminDashboard";
 import Maintenance from "../User/UserDashboard/Maintenance";
 import UserCard from "../User/UserDashboard/UserCard"
 import Users from "../Admin/AdminDashboard/Users";
@@ -15,6 +14,7 @@ import Services from "../Admin/AdminDashboard/Services";
 import Profile from "../User/UserDashboard/Profile";
 import UserProduct from "../User/UserDashboard/UserReview";
 import UserServices from "../User/UserDashboard/UserServices";
+import AdminCard from "../Admin/AdminDashboard/AdminCard";
 
 
 const Routers= () => {
@@ -26,7 +26,7 @@ const Routers= () => {
         <Route path="/service" element={<Service />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/admin/dashboard" element={<AdminDashboard />}></Route>
+        <Route path="/admin/dashboard" element={<AdminCard />}></Route>
         <Route path="/admin/users" element={<Users />}></Route>
         <Route path="/admin/active-users" element={<ActiveUsers />}></Route>
         <Route path="/admin/products" element={<Products />}></Route>

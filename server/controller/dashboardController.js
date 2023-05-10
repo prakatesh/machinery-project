@@ -21,3 +21,20 @@ exports.dashboardData=async(req,res)=>{
         console.log(e)
     }
 }
+
+
+exports.adminDashBoard=async(req,res)=>{
+    try
+    {
+        const data=await manageModel.find()
+        
+        for(i of data)
+        {
+            console.log(data)
+        }
+    }
+    catch(e)
+    {
+        console.log(e)
+    }
+}
