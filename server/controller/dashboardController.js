@@ -1,6 +1,6 @@
 const reviewModel =require('../modules/review')
 const manageModel=require('../modules/manage')
-
+const signUp = require('../modules/signup')
 exports.dashboardData=async(req,res)=>{
     try{
         let hours=0,oil=0
@@ -26,12 +26,28 @@ exports.dashboardData=async(req,res)=>{
 exports.adminDashBoard=async(req,res)=>{
     try
     {
-        const data=await manageModel.find()
-        
+        const data=await signUp.find({role:"User",active:1})
+        const email=[]
+        const list=[]
+        var oil=0,hour=0;
         for(i of data)
         {
-            console.log(data)
+            // console.log(i.email)
+            email.push(i.email)
         }
+        for(i of email)
+        {   oil=0
+            hour=0
+            const email=await manageModel.find({email:i})
+            for(j of email)
+            {
+                oil+=j.oil
+                hour+=j.hours
+            }
+            list.push({email:i,oil:oil,hour:250-hour})
+        }
+        // for(i of list){console.log(i)}
+        res.send({status:200,data:list})
     }
     catch(e)
     {

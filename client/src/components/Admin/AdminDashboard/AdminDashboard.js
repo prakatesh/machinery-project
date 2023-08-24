@@ -74,12 +74,7 @@ function AdminDashboard(props) {
             navigate("/admin/products");
           }}
         >
-          <ListItemButton>
-            <ListItemIcon>
-              <InventoryIcon />
-            </ListItemIcon>
-            <ListItemText primary="Products" />
-          </ListItemButton>
+          
         </ListItem>
       </List>
       <Divider />
