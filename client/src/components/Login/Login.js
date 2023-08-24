@@ -14,7 +14,7 @@ function Login() {
   const [password,setpass]=useState('')
   async function submit(props){
     const data={email:email,password:password}
-    await fetch("http://localhost:8000/user/login",{
+    await fetch("https://mech-ranger.onrender.com/user/login",{
           body : JSON.stringify(data),
           method : "POST",
           headers: {
