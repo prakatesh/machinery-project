@@ -22,7 +22,7 @@ const Services = () => {
   const [email,setemail]=useState()
 
   useEffect(()=>{
-    fetch("http://localhost:8000/admin/activeUser",{
+    fetch("https://mech-ranger.onrender.com/admin/activeUser",{
         method:"get"
     }).then((res)=>res.json())
     .then((data)=>{
@@ -32,7 +32,7 @@ const Services = () => {
 
   async function sumbit()
   {
-    await fetch( `http://localhost:8000/user/service/${options}`,{
+    await fetch( `https://mech-ranger.onrender.com/user/service/${options}`,{
           method : "get",
         }
         ).then((response) => response.json())
@@ -80,7 +80,7 @@ const Services = () => {
       review:review,
       item:value
     }
-    await fetch("http://localhost:8000/admin/review",{
+    await fetch("https://mech-ranger.onrender.com/admin/review",{
       body : JSON.stringify(data),
       method : "post",
       headers: {

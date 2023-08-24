@@ -13,7 +13,7 @@ const ActiveUsers = () => {
   const [index,setindex]=useState(0)
 
   useEffect(()=>{
-    fetch("http://localhost:8000/admin/activeUser",{
+    fetch("https://mech-ranger.onrender.com/admin/activeUser",{
         method:"get"
     }).then((res)=>res.json())
     .then((data)=>{
@@ -25,7 +25,7 @@ const ActiveUsers = () => {
 
   function submit(e){
 
-    fetch(`http://localhost:8000/user/service/${e.target.value}`,{
+    fetch(`https://mech-ranger.onrender.com/user/service/${e.target.value}`,{
           method : "get",
         }
         ).then((response) => response.json())

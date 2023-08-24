@@ -8,7 +8,7 @@ const drawerWidth = 240;
 const AdminCard = () => {
     const[array,setarray]=useState([])
     useEffect(()=>{
-        fetch(`http://localhost:8000/admin/dashboard`,{
+        fetch(`https://mech-ranger.onrender.com/admin/dashboard`,{
               method : "get",
             }
             ).then((response) => response.json())

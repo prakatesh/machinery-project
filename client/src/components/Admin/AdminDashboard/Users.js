@@ -10,7 +10,7 @@ const Users = () => {
   const [array,setarry]=useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:8000/admin/usersignup",{
+    fetch("https://mech-ranger.onrender.com/admin/usersignup",{
         method:"get"
     }).then((res)=>res.json())
     .then((data)=>{
@@ -23,7 +23,7 @@ const Users = () => {
   async function active(e){
     const data={_id:e.target.value}
     console.log(data)
-    await fetch("http://localhost:8000/admin/active",{
+    await fetch("https://mech-ranger.onrender.com/admin/active",{
           body : JSON.stringify(data),
           method : "put",
           headers: {
@@ -43,7 +43,7 @@ const Users = () => {
   async function deactive(e){
     const data={_id:e.target.value}
     console.log(data)
-    await fetch("http://localhost:8000/admin/deactive",{
+    await fetch("https://mech-ranger.onrender.com/admin/deactive",{
           body : JSON.stringify(data),
           method : "put",
           headers: {

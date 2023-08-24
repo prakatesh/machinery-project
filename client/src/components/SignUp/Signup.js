@@ -16,7 +16,7 @@ function Signup() {
   {
     const data={name:name,email:email,password:password,role:role}
     console.log(data)
-    await fetch("http://localhost:8000/user/signup",{
+    await fetch("https://mech-ranger.onrender.com/user/signup",{
           body : JSON.stringify(data),
           method : "POST",
           headers: {
