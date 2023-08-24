@@ -27,7 +27,7 @@ const Mainetenance = () => {
     e.preventDefault()
     const data={oil:oil,temp:temp,gas:gas,hours:hours,date:date,oilpress:oilpress,email:`${auth.user}`}
     console.log(data)
-    await fetch("http://localhost:8000/user/manage",{
+    await fetch("https://mech-ranger.onrender.com/user/manage",{
           body : JSON.stringify(data),
           method : "POST",
           headers: {

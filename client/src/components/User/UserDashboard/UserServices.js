@@ -14,7 +14,7 @@ const UserServices = () => {
   const auth=useAuth()
 
   useEffect(()=>{
-    fetch(`http://localhost:8000/user/service/${auth.user}`,{
+    fetch(`https://mech-ranger.onrender.com/user/service/${auth.user}`,{
           method : "get",
         }
         ).then((response) => response.json())

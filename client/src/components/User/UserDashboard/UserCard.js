@@ -22,7 +22,7 @@ const UserCard = () => {
       navigate('/login')
     }
 
-    fetch(`http://localhost:8000/user/dashboard/${auth.user}`,{
+    fetch(`https://mech-ranger.onrender.com/user/dashboard/${auth.user}`,{
           method : "get",
         }
         ).then((response) => response.json())

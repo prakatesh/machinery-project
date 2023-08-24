@@ -21,7 +21,7 @@ const Profile = () => {
       navigate('/login')
     }
 
-    fetch(`http://localhost:8000/user/profile/${auth.user}`,{
+    fetch(`https://mech-ranger.onrender.com/user/profile/${auth.user}`,{
           method : "POST",
         }
         ).then((response) => response.json())

@@ -24,7 +24,7 @@ const UserProduct = () => {
       navigate('/login')
     }
 
-    fetch(`http://localhost:8000/user/review/${auth.user}`,{
+    fetch(`https://mech-ranger.onrender.com/user/review/${auth.user}`,{
           method : "get",
         }
         ).then((response) => response.json())
@@ -48,7 +48,7 @@ const UserProduct = () => {
   {
 
     const data={comment:reviewUser,email:`${auth.user}`,_id:id}
-    fetch(`http://localhost:8000/user/comment`,{
+    fetch(`https://mech-ranger.onrender.com/user/comment`,{
       body : JSON.stringify(data),
           method : "put",
           headers: {
