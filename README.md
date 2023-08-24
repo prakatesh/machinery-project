@@ -1,3 +1,2 @@
 # machinery-project
-# next task  oil server
-# that to in dashboard(for the individual users)
+<a href="https://mech-ranger.netlify.app/">mech-ranger.netlify.app</a>
