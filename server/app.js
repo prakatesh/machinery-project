@@ -18,6 +18,6 @@ app.use('/user',userRouter)
 app.use('/admin',adminRouter)
 
 
-app.listen(8000, () => {
+app.listen(3000, () => {
   console.log("Port is listening on 8000");
 });
