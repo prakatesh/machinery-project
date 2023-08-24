@@ -12,7 +12,6 @@ exports.dashboardData=async(req,res)=>{
             oil+=i.oil
         }
         const review=await reviewModel.find({email:user,see:0}).count()
-        console.log("Fetch for dashBoard")
         res.json({status:200,data:[oil,250-hours,review]})
 
     }
@@ -32,7 +31,6 @@ exports.adminDashBoard=async(req,res)=>{
         var oil=0,hour=0;
         for(i of data)
         {
-            // console.log(i.email)
             email.push(i.email)
         }
         for(i of email)
@@ -46,7 +44,6 @@ exports.adminDashBoard=async(req,res)=>{
             }
             list.push({email:i,oil:oil,hour:250-hour})
         }
-        // for(i of list){console.log(i)}
         res.send({status:200,data:list})
     }
     catch(e)

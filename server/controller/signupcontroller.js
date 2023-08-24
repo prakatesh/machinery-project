@@ -12,7 +12,6 @@ exports.signUp=async(req,res)=>{
     try{
         await signupModules.create([data])
         res.json("done")
-        console.log("Signup data is inserted")
     }
     catch(e)
     {

@@ -16,7 +16,6 @@ exports.manage=async(req,res)=>
     try{
         await manageModules.create([data])
         res.json("done")
-        console.log("Manage data is inserted")
     }
     catch(e)
     {

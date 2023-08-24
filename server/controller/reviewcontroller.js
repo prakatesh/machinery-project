@@ -11,7 +11,6 @@ exports.review=async(req,res)=>{
             item:item
         }
         await reviewModel.insertMany([data])
-        console.log("The data from admin is received for review")
         res.json({status:200,data:"data"})
     }
     catch(e)
@@ -25,7 +24,6 @@ exports.reviewUser=async(req,res)=>{
     try{
         const user=req.params.email
         const data=await reviewModel.find({email:user,see:0})
-        console.log("data for the user review")
         res.json({status:200,data:data})
     }
     catch(e)
